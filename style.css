@@ -1,0 +1,161 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+body{
+  background: linear-gradient(to bottom, #000000, #000000, #1d1d1d, #1d1d1d);
+}
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: white;
+  padding: 0px 0px;
+}
+
+a{
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: linear-gradient(90deg,#000000e5,#3f4041);
+}
+
+span{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.089);
+  transform: translate(-10%, -10%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+  }
+  100%
+  {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+header{
+  display: flex;
+  height: 70px;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo{
+  display: flex;
+  color: white;
+  padding: 10px;
+  align-items: center;
+}
+
+.logo img{
+  height: 50px;
+  margin-right: 10px;
+}
+/*banner*/
+.banner{
+height: 280px;
+background-image: url(imagenes/portada10.png);
+background-size: cover;
+background-position: center;
+/*poner imagen oscura
+background-color: rgba(0, 0, 0, .5);
+background-blend-mode: darken;*/
+}
+img{
+  max-width: 100%;
+}
+.subtitulo1{
+  color: rgb(255, 255, 255);
+  margin: 9%;
+  text-align: center;
+}
+/*items*/
+.container-items{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;/*separacion*/
+
+}
+.item{
+  border-radius: 10%;
+  background-color: rgb(255, 255, 255);
+
+}
+.item:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);/*sombra*/
+  overflow: hidden;
+}
+.item:normal{
+  overflow: hidden;
+}
+
+.item img{/*imagen del producto por defecto*/
+  width: 100%;
+  height: 300px;
+  object-fit: cover;/*adapta la imagen*/
+  border-radius: 13%;
+  
+  transition: all .5s;/*segundos de la transicion*/
+}
+.item figure{
+  overflow: hidden;/*para que no se desborde la imagen*/
+
+}
+
+
+.item:hover img{ 
+transform: scale(1.22);/*zoom cada vez que pasa el raton*/
+
+}
+
+.info-product{
+  padding: 15px 30px;
+  line-height:2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #000;
+}
+.price{
+  font-size: 18px;
+  font-weight: 900;
+
+}
+.info-product button{
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 15px 10px;
+  cursor: pointer;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+}

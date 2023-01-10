@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    
+    <title>3DI</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+<body>
+  <!--Logo-->
+  <header>
+    <div class="logo">
+      <img src="logo puntos.png" alt="logo de la compañia"
+      <h2 class="nombre-empresa">3DI</h2>
+    </div>
+    <!--Navegacion-->
+    <nav>
+      <a href="" class="nav-link">inicio</a>
+      <a href="" class="nav-link">Nueva Colección</a>
+      <a href="" class="nav-link">Contacto</a>
+      <script type="text/javascript">
+        const buttons = document.querySelectorAll('a');
+        buttons.forEach(btn => {
+          btn.addEventListener('mouseenter', function(e){
+
+            let x = e.clientX - e.target.offsetLeft;
+            let y = e.clientY - e.target.offsetTop;
+
+            let ripples = document.createElement('span');
+            ripples.style.left = x +'px';
+            ripples.style.top = y +'px';
+            this.appendChild(ripples);
+
+            setTimeout(()=>{
+              ripples.remove()
+          }, 1000);
+        })
+      })  
+      </script>
+    </nav>
+  
+  </header>
+  <div class="banner">
+  </div>
+
+<!--Items-->
+
+<section class="segundaseccion">
+  <div class="subtitulo1"><h2>Tendencia</h2></div>
+ <div class="container-items">
+    <div class="item">
+      <figure>
+        <img src="https://cdn.shopify.com/s/files/1/1362/3971/products/Halfzip-Azul-1.jpg?v=1604500952" alt="producto">
+
+      </figure>
+      <div class="info-product">
+        <h3>sueter</h3>
+        <p class="price">35</p>
+        <button>comprar</button>
+      </div>
+      
+    </div>
+    <div class="item">
+      <figure>
+        <img src="https://cdn.shopify.com/s/files/1/1362/3971/products/Halfzip-Azul-1.jpg?v=1604500952" alt="producto">
+
+      </figure>
+      <div class="info-product">
+        <h3>sueter</h3>
+        <p class="price">35</p>
+        <button>comprar</button>
+      </div>
+      
+    </div>
+    <div class="item">
+      <figure>
+        <img src="https://cdn.shopify.com/s/files/1/1362/3971/products/Halfzip-Azul-1.jpg?v=1604500952" alt="producto">
+
+      </figure>
+      <div class="info-product">
+        <h3>sueter</h3>
+        <p class="price">35</p>
+        <button>comprar</button>
+      </div>
+      
+    </div>
+
+
+  </div>
+</section>
+<!--pie de pagina
+  <footer>
+    <p>Copyright 2023 3DI Shop</p>
+  </footer>
+  -->
+</body>
+</html>
