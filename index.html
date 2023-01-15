@@ -1,101 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible"
-    content="IE=edge">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-    
-    <title>3DI</title>
-    <link rel="stylesheet" href="/style.css">
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>3DI Shop</title>
+
+</head>
 <body>
-  <!--Logo-->
-  <header>
-    <div class="logo">
-      <img src="logo puntos.png" alt="logo de la compañia"
-      <h2 class="nombre-empresa">3DI</h2>
-    </div>
-    <!--Navegacion-->
-    <nav>
-      <a href="" class="nav-link">inicio</a>
-      <a href="" class="nav-link">Nueva Colección</a>
-      <a href="" class="nav-link">Contacto</a>
-      <script type="text/javascript">
-        const buttons = document.querySelectorAll('a');
-        buttons.forEach(btn => {
-          btn.addEventListener('mouseenter', function(e){
 
-            let x = e.clientX - e.target.offsetLeft;
-            let y = e.clientY - e.target.offsetTop;
+    <div class="head">
 
-            let ripples = document.createElement('span');
-            ripples.style.left = x +'px';
-            ripples.style.top = y +'px';
-            this.appendChild(ripples);
+		<a class="logolink" href="index.html"> <div class="logo">
+            <img src="img/logo puntos.png" alt="logo de la compañia">
+        </div>
+		</a>
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Conacto</a>
+            <a href="#">Productos</a>
+            <a href="#">Precio</a>
+        </nav>
 
-            setTimeout(()=>{
-              ripples.remove()
-          }, 1000);
-        })
-      })  
-      </script>
-    </nav>
-  
-  </header>
-  <div class="banner">
-  </div>
-
-<!--Items-->
-
-<section class="segundaseccion">
-  <div class="subtitulo1"><h2>Tendencia</h2></div>
- <div class="container-items">
-    <div class="item">
-      <figure>
-        <img src="https://cdn.shopify.com/s/files/1/1362/3971/products/Halfzip-Azul-1.jpg?v=1604500952" alt="producto">
-
-      </figure>
-      <div class="info-product">
-        <h3>sueter</h3>
-        <p class="price">35</p>
-        <button>comprar</button>
-      </div>
-      
-    </div>
-    <div class="item">
-      <figure>
-        <img src="https://cdn.shopify.com/s/files/1/1362/3971/products/Halfzip-Azul-1.jpg?v=1604500952" alt="producto">
-
-      </figure>
-      <div class="info-product">
-        <h3>sueter</h3>
-        <p class="price">35</p>
-        <button>comprar</button>
-      </div>
-      
-    </div>
-    <div class="item">
-      <figure>
-        <img src="https://cdn.shopify.com/s/files/1/1362/3971/products/Halfzip-Azul-1.jpg?v=1604500952" alt="producto">
-
-      </figure>
-      <div class="info-product">
-        <h3>sueter</h3>
-        <p class="price">35</p>
-        <button>comprar</button>
-      </div>
-      
     </div>
 
+    <header class="content header">
+        <h2 class="title"></h2>
 
-  </div>
-</section>
-<!--pie de pagina
-  <footer>
-    <p>Copyright 2023 3DI Shop</p>
-  </footer>
-  -->
+    </header>
+
+    <section class="content sau">
+
+        <h2 class="nuevaColeccion">Nueva Coleccion</h2>
+
+        <div class="container-items">
+			<a class="itema"href="#"><div class="item">
+				<figure>
+					<img
+						src="https://www.carlosnieto.com.co/wp-content/uploads/SUETER-GRIS-CLARO-CUELLO-REDONDO-CN-0021264.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Sueter</h2>
+					<p class="price">$80</p>
+					<button>Comprar</button>
+				</div>
+			</div></a>
+			<a class="itema"href="#"><div class="item">
+				<figure>
+					<img
+						src="https://www.carlosnieto.com.co/wp-content/uploads/CINTURON-VINOTINTO-CUERO-TRENZADO-0021144.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Sueter</h2>
+					<p class="price">$20</p>
+					<button>Comprar</button>
+				</div>
+			</div></a>
+			<a class="itema"href="#"><div class="item">
+				<figure>
+					<img
+						src="https://www.carlosnieto.com.co/wp-content/uploads/SUETER-GRIS-CLARO-CUELLO-REDONDO-CN-0021264.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Sueter</h2>
+					<p class="price">$50</p>
+					<button>Comprar</button>
+				</div>
+			</div>
+            </a>
+    </section>
+	<footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="img/logo puntos.png" alt="">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Atencion Al Cliente</h2>
+                <a href="">Consejos Para La Web</a>
+                <a href="#">Metodos De Pago</a>
+                <a href="#">Devolucion Y Reembolso</a>
+                <a href="#">Contactanos</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">politicas</a>
+                <a href="#">Servicios</a>              
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.facebook.com/profile.php?id=100088964961637" target="_blank"> <i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter" target="_blank"></i> Twitter</a>
+                <a href="https://www.tiktok.com/@3di_shop" target="_blank"><i class="fab fa-tiktok"></i> Tiktok</a>
+                <a href="https://www.instagram.com/3dishop_/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2023 <b>3DI Shop</b></p>
+        </div>
+    </footer>
+    
+    
 </body>
 </html>
